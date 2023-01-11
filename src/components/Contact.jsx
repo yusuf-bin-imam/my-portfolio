@@ -5,7 +5,9 @@ const Contact = () => {
   return (
     <div className="bg-[#6E07F3]">
       <div className="font-bold bg-[#f7e8e8] rounded-t-2xl py-10 max-w-screen-lg mx-auto  ">
-        <h2 className="mt-10 text-3xl font-bold">Lets talk</h2>
+        <h2 id="contact" className="mt-10 text-3xl font-bold">
+          Lets talk
+        </h2>
         <p id="title" className=" text-xl  mt-3">
           Fell free to contact with me via
           <a

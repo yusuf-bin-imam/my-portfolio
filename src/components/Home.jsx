@@ -14,7 +14,7 @@ const Home = () => {
               Hello..! I am
             </h1>
             <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl ">
-              Yusuf Bin Imam
+              Yusuf Bin Imam <br />
               <span className="sm:block "> Mern stack developer</span>
             </h1>
 

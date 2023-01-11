@@ -21,7 +21,7 @@ export default function Example() {
   const navList = (
     <ul
       id="navlinks"
-      className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6"
+      className=" mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6"
     >
       <NavLink
         to={"/"}
@@ -54,8 +54,8 @@ export default function Example() {
   );
 
   return (
-    <div className="">
-      <Navbar className="mx-auto max-w-screen-xl h-24 border-none  py-2 px-4 lg:px-8 lg:py-4">
+    <div className="border-b-2 border-black">
+      <Navbar className="mx-auto max-w-screen-xl  h-24 border-none  py-2 px-4 lg:px-8 lg:py-4">
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
@@ -73,16 +73,13 @@ export default function Example() {
             </Link>
           </Typography>
           <div className="hidden lg:block">{navList}</div>
-          <Button
-            className="rounded-full hidden lg:inline-block py-3 px-12 bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-pink-500 text-white  font-semibold"
-            variant="gradient"
-            size="sm"
-          >
-            {/* <Link to={"/contact"}>
-            <span>Contact</span>
-          </Link> */}
-            <a href="#contact">contact</a>
-          </Button>
+
+          <Link id="title" to={"/contactDetails"}>
+            <button className="rounded-full text-black font-bold focus:border-none border-black border hidden lg:inline-block py-3 px-12 hover:bg-purple-500 ">
+              Contact
+            </button>
+          </Link>
+
           <IconButton
             variant="text"
             className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -93,7 +90,7 @@ export default function Example() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
-                className="h-6 w-6"
+                className="h-6 bg-black w-6"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 strokeWidth={2}
@@ -107,7 +104,7 @@ export default function Example() {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-6  text-black w-6"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={2}
@@ -122,11 +119,16 @@ export default function Example() {
           </IconButton>
         </div>
         <MobileNav open={openNav}>
-          <div>
+          <div className="py-10  bg-[#c6c6c6]">
             {navList}
-            <Button variant="gradient" size="sm" fullWidth className="mb-2">
-              <span>Buy Now</span>
-            </Button>
+
+            <Link
+              id="title"
+              className="text-black font-bold"
+              to={"/contactDetails"}
+            >
+              <button>Contact</button>
+            </Link>
           </div>
         </MobileNav>
       </Navbar>
