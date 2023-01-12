@@ -25,7 +25,7 @@ const About = () => {
             data-aos-duration="3000"
             className="lg:mt-1 mx-auto"
           >
-            <h2 className="text-4xl -ml-1 mb-3  text-white lg:text-start font-bold">
+            <h2 className="text-4xl -ml-1 mb-3 mt-6 text-white lg:text-start font-bold">
               Hi there..! I’m Yusuf <br />
               Nice to meet you.
             </h2>

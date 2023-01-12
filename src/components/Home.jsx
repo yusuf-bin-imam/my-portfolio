@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
 import Image from "./Image";
+import MyProject from "./MyProject";
 
 const Home = () => {
   return (
     <div>
-      <section className=" bg-blue-200 text-white">
+      <section className=" bg-black text-white">
         <div className="mx-auto  px-4  lg:flex lg:h-screen lg:items-center">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-2xl text-black font-medium">Hello..! I am</h1>
@@ -28,14 +29,18 @@ const Home = () => {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a href="https://drive.google.com/file/d/1WAdTsZ8UrHGxjqIU8E2-VuezzIBcx4aH/view?usp=share_link">
                 {" "}
-                <button className="rounded py-3 px-12 bg-gradient-to-r from-green-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500 text-white  font-semibold">
+                <button
+                  id="text"
+                  className="px-10 py-3 bg-yellow-500 rounded-md border border-black text-black font-bold"
+                >
                   Resume
                 </button>
               </a>
 
               <Link
+                id="text"
                 to={"/contact"}
-                className="rounded py-3 px-12 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-red-800 hover:to-black text-white  font-semibold"
+                className=" px-10 py-3 bg-[#6E07F3] rounded-md border border-black text-white font-bold"
               >
                 Hire Me
               </Link>
@@ -45,6 +50,8 @@ const Home = () => {
       </section>
       <Image />
       <About />
+
+      <MyProject />
       <Contact />
     </div>
   );

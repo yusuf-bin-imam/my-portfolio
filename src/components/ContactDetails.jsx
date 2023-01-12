@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 const Contact = () => {
   const form = useRef();
@@ -19,6 +18,8 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          toast.success("The message has been successfully sent");
+          e.target.reset();
           setDisable(true);
         },
         (error) => {
@@ -48,6 +49,7 @@ const Contact = () => {
                   <div class="relative">
                     <input
                       type="text"
+                      id="inputTxt"
                       placeholder="Enter your name"
                       name="user_name"
                       required
@@ -61,7 +63,7 @@ const Contact = () => {
                     <input
                       type="email"
                       placeholder="Enter your email"
-                      id="email"
+                      id="inputTxt"
                       name="user_email"
                       required
                       class="w-full bg-white rounded-md border-black border-2 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -72,7 +74,7 @@ const Contact = () => {
                 <div class="p-2 w-full">
                   <div class="relative">
                     <textarea
-                      id="message"
+                      id="inputTxt"
                       name="message"
                       required
                       placeholder="Additional details"
@@ -84,35 +86,14 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <button disabled={disable ? true : false} type="submit">
+            <button
+              id="title"
+              className="bg-yellow-500 border border-black px-10 rounded-md text-black font-bold py-3"
+              disabled={disable ? true : false}
+              type="submit"
+            >
               submit
             </button>
-            {/* 
-            <Link class="group relative inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500">
-              <span class="absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4">
-                <svg
-                  class="h-5 w-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </span>
-
-              <button
-                type="submit"
-                class="text-sm font-medium transition-all group-hover:mr-4"
-              >
-                Send
-              </button>
-            </Link> */}
           </form>
         </div>
       </section>

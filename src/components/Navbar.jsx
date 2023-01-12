@@ -46,7 +46,7 @@ export default function Example() {
 
       <NavLink
         to={"blogs"}
-        className="mr-5 font-bold text-black hover:text-green-800 "
+        className="mr-5 font-bold  text-black hover:text-green-800 "
       >
         Blogs
       </NavLink>

@@ -8,7 +8,7 @@ const Sidebar = () => {
   return (
     <div>
       <Tooltip
-        className="ml-5 font-bold text-black bg-white"
+        className="ml-5 font-bold text-black rounded bg-white"
         content="Facebook"
         animate={{
           mount: { scale: 1, y: 0 },
@@ -27,7 +27,7 @@ const Sidebar = () => {
       </Tooltip>
       <br />
       <Tooltip
-        className="ml-5 font-bold text-black bg-white"
+        className="ml-5 font-bold text-black rounded bg-white"
         content="Linkedin"
         placement="right-end"
         animate={{
@@ -43,7 +43,7 @@ const Sidebar = () => {
         </a>
       </Tooltip>
       <Tooltip
-        className="ml-5 font-bold text-black bg-white"
+        className="ml-5 font-bold text-black rounded bg-white"
         content="Github"
         placement="right-end"
         animate={{
