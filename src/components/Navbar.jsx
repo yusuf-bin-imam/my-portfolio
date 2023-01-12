@@ -54,8 +54,8 @@ export default function Example() {
   );
 
   return (
-    <div className="border-b-2 border-black">
-      <Navbar className="mx-auto max-w-screen-xl  h-24 border-none  py-2 px-4 lg:px-8 lg:py-4">
+    <div className="border-b-2 bg-indigo-200  border-black">
+      <Navbar className="mx-auto max-w-screen-xl bg-indigo-200 h-24 border-none  py-2 px-4 lg:px-8 lg:py-4">
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"

@@ -10,7 +10,7 @@ const Main = () => {
       <Navbar />
 
       <div>
-        <div className="mt-40 lg:mt-10">
+        <div className="">
           <Outlet />
         </div>
 
