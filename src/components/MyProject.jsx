@@ -43,7 +43,7 @@ const MyProject = () => {
                 <a href="https://plumboy-37ca4.web.app/">
                   <button
                     id="title"
-                    class="  mt-3 text-white bg-[#6E07F3]  py-3 px-10 border border-black focus:outline  rounded"
+                    class="  mt-3 transition-all hover:scale-110 text-white bg-[#6E07F3]  py-3 px-10 border border-black focus:outline  rounded"
                   >
                     Live_View
                   </button>
@@ -54,21 +54,25 @@ const MyProject = () => {
         </div>
       </section>
       <div className="grid -mt-5 mb-10 grid-cols-2 gap-7 ">
-        <div>
+        <div className="container">
+          <div className="content">
+            <div className="screen">
+              <img
+                src="https://www.linkpicture.com/q/Screenshot_20230116_125416.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        {/* <div>
           <a href="#" class="group rounded-lg relative block h-full bg-black">
             <img
               alt="Developer"
-              src="https://i.postimg.cc/tRtrHC23/Screenshot-20230112-090724.png"
+              src="https://www.linkpicture.com/q/Screenshot_20230116_125416.png"
               class="absolute rounded-md inset-0 h-full w-[690px] object-cover opacity-75 transition-opacity group-hover:opacity-10"
             />
 
             <div class="relative p-8">
-              {/* <p class="text-sm font-medium uppercase tracking-widest text-pink-500">
-                Developer
-              </p>
-
-              <p class="text-2xl font-bold text-white">Tony Wayne</p> */}
-
               <div class="mt-60">
                 <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                   {" "}
@@ -90,11 +94,11 @@ const MyProject = () => {
               </div>
             </div>
           </a>
-        </div>
+        </div> */}
         <div>
           <a
             href="#"
-            class="group rounded-lg relative block h-[412px] bg-black"
+            class="group scroll-smooth rounded-lg relative block h-[412px] bg-black"
           >
             <img
               alt="Developer"
