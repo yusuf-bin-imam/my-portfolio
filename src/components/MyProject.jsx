@@ -1,5 +1,8 @@
 import React from "react";
-
+import smartzone from "../../src/image/smartzone.png";
+import skillshare from "../../src/image/skillshare.png";
+import quiz from "../../src/image/quiz.jpg";
+import plumboy from "../../src/image/plumboy.png";
 const MyProject = () => {
   return (
     <div className="min-h-screen max-w-screen-xl mx-auto">
@@ -11,7 +14,7 @@ const MyProject = () => {
           The projects I've worked on are listed here.
         </p>
       </div>
-      <section class="text-gray-600  body-font overflow-hidden">
+      <section class="text-gray-600 hidden lg:block body-font overflow-hidden">
         <div id="container">
           <div id="content">
             <div id="screen">
@@ -53,89 +56,99 @@ const MyProject = () => {
           </div>
         </div>
       </section>
-      <div className="grid -mt-5 mb-10 grid-cols-2 gap-7 ">
-        <div className="container">
-          <div className="content">
-            <div className="screen">
-              <img
-                src="https://www.linkpicture.com/q/Screenshot_20230116_125416.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        {/* <div>
-          <a href="#" class="group rounded-lg relative block h-full bg-black">
+
+      <section className="grid m-5 lg:grid-cols-2 gap-5 ">
+        <div className="lg:hidden sm:block">
+          <a href="#" class="group relative rounded-xl block bg-black">
             <img
               alt="Developer"
-              src="https://www.linkpicture.com/q/Screenshot_20230116_125416.png"
-              class="absolute rounded-md inset-0 h-full w-[690px] object-cover opacity-75 transition-opacity group-hover:opacity-10"
+              src={plumboy}
+              class="absolute inset-0 h-full w-full object-cover rounded-xl opacity-75 transition-opacity group-hover:opacity-0"
             />
 
-            <div class="relative p-8">
-              <div class="mt-60">
-                <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                  {" "}
-                  <p id="title" className="font-bold text-4xl text-white">
-                    Skill_Share
-                  </p>
-                  <p id="text" className="font-medium text-xl text-[#6E07F3]">
-                    Learn without Limits
-                  </p>
-                  <a href="https://skillshare-authentication.web.app/">
-                    <button
-                      id="title"
-                      class="  mt-3 text-white bg-[#6E07F3]  py-3 px-10 border border-black focus:outline  rounded"
-                    >
-                      Live_View
-                    </button>
-                  </a>
+            <div class="relative p-8 ">
+              <div class="mt-48 rounded-xl">
+                <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0  group-hover:opacity-100">
+                  <p class="text-2xl font-bold text-white">Plumboy</p>
+                  <p class="text-md text-white">Best plumbing service</p>
+                  <button className="px-10 py-3 bg-yellow-500 rounded-md font-bold mt-2">
+                    <a href="https://plumboy-37ca4.web.app/">Live_View</a>
+                  </button>
                 </div>
               </div>
             </div>
           </a>
-        </div> */}
+        </div>
         <div>
-          <a
-            href="#"
-            class="group scroll-smooth rounded-lg relative block h-[412px] bg-black"
-          >
+          <a href="#" class="group relative rounded-xl block bg-black">
             <img
               alt="Developer"
-              src="https://www.linkpicture.com/q/Screenshot_20230112_083612.png"
-              class="absolute rounded-md inset-0 h-full w-[690px] object-cover opacity-75 transition-opacity group-hover:opacity-10"
+              src={smartzone}
+              class="absolute inset-0 h-full w-full object-cover rounded-xl opacity-75 transition-opacity group-hover:opacity-0"
             />
 
             <div class="relative p-8">
-              {/* <p class="text-sm font-medium uppercase tracking-widest text-pink-500">
-                Developer
-              </p>
-
-              <p class="text-2xl font-bold text-white">Tony Wayne</p> */}
-
-              <div class="mt-60">
-                <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                  {" "}
-                  <p id="title" className="font-bold text-4xl text-white">
-                    Skill_Share
-                  </p>
-                  <p id="text" className="font-medium text-xl text-[#6E07F3]">
-                    Learn without Limits
-                  </p>
-                  <a href="https://skillshare-authentication.web.app/">
-                    <button
-                      id="title"
-                      class="  mt-3 text-white bg-[#6E07F3]  py-3 px-10 border border-black focus:outline  rounded"
-                    >
-                      Live_View
-                    </button>
-                  </a>
+              <div class="mt-48 rounded-xl">
+                <div class="translate-y-8 transform  opacity-0 transition-all  group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-2xl font-bold text-white">SmartZone</p>
+                  <p class="text-md text-white">A complete tech house</p>
+                  <button className="px-10  py-3 bg-cyan-500 rounded-md font-bold mt-2">
+                    Live_View
+                  </button>
                 </div>
               </div>
             </div>
           </a>
         </div>
-      </div>
+        <div>
+          <a href="#" class="group relative rounded-xl block bg-black">
+            <img
+              alt="Developer"
+              src={quiz}
+              class="absolute inset-0 h-full w-full object-cover rounded-xl opacity-75 transition-opacity group-hover:opacity-0"
+            />
+
+            <div class="relative p-8">
+              <div class="mt-48 rounded-xl">
+                <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-2xl font-bold text-white">Codecademy</p>
+                  <p class="text-md text-white">
+                    Unlocking knowledge at the speed of thought.
+                  </p>
+                  <button className="px-10 py-3 bg-yellow-500 rounded-md font-bold mt-2">
+                    <a href="https://quiz-crackhers-assignments.netlify.app/">
+                      Live_View
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="group relative rounded-xl block bg-black">
+            <img
+              alt="Developer"
+              src={skillshare}
+              class="absolute inset-0 h-full w-full object-cover rounded-xl opacity-75 transition-opacity group-hover:opacity-0"
+            />
+
+            <div class="relative  p-8">
+              <div class="mt-48 rounded-xl">
+                <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-2xl font-bold text-white">Skill_Share</p>
+                  <p class="text-md text-white">
+                    Providing amazing online courses.
+                  </p>
+                  <button className="px-10 py-3 bg-purple-500 rounded-md font-bold mt-2">
+                    Live_View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
     </div>
   );
 };

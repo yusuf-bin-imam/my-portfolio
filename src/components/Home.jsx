@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Typical from "react-typical";
 import About from "./About";
 import Contact from "./Contact";
 import Image from "./Image";
@@ -10,11 +11,21 @@ const Home = () => {
     <div>
       <section className=" bg-black text-white">
         <div className="mx-auto  px-4  lg:flex lg:h-screen lg:items-center">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-2xl text-black font-medium">Hello..! I am</h1>
-            <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl ">
+          <div className="mx-auto max-w-3xl text-start">
+            <h1 className="text-5xl text-black font-medium">Hello..! I am</h1>
+            <h1 className="bg-clip-text text-3xl font-extrabold  sm:text-5xl ">
               Yusuf Bin Imam <br />
-              <span className="sm:block "> Mern stack developer</span>
+              <Typical
+                loop={Infinity}
+                wrapper="p"
+                steps={[
+                  "mern stack developer",
+                  2000,
+                  "Reactjs developer",
+                  3000,
+                ]}
+              />
+              <span className="sm:block "> </span>
             </h1>
 
             <p
