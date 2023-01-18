@@ -8,35 +8,42 @@ import MyProject from "./MyProject";
 
 const Home = () => {
   return (
-    <div>
-      <section className=" bg-black text-white">
-        <div className="mx-auto  px-4  lg:flex lg:h-screen lg:items-center">
-          <div className="mx-auto max-w-3xl text-start">
-            <h1 className="text-5xl text-black font-medium">Hello..! I am</h1>
-            <h1 className="bg-clip-text text-3xl font-extrabold  sm:text-5xl ">
+    <div className="min-h-screen mt-14">
+      <section className=" bg-white  text-white">
+        <img
+          src="https://www.linkpicture.com/q/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail-removebg-preview-1.png"
+          alt=""
+          className="w-48 mx-auto"
+        />
+        <h1 id="title" className="text-md mt-3  font-bold text-black">
+          Hello I'm
+        </h1>
+        <div className="mx-auto  px-4  lg:flex  lg:items-center">
+          <div className="mx-auto   max-w-3xl text-center">
+            <h1
+              id="title"
+              className="bg-clip-text mx-auto  text-black text-3xl font-extrabold  sm:text-5xl "
+            >
               Yusuf Bin Imam <br />
-              <Typical
-                loop={Infinity}
-                wrapper="p"
-                steps={[
-                  "mern stack developer",
-                  2000,
-                  "Reactjs developer",
-                  3000,
-                ]}
-              />
-              <span className="sm:block "> </span>
-            </h1>
-
+              <p className="text-lg  flex items-center justify-center">
+                <span className="mr-2">Frontend </span>
+                <span>
+                  <Typical
+                    loop={Infinity}
+                    wrapper="h2"
+                    steps={["developer", 3000, " engineer", 3000]}
+                  />
+                </span>
+              </p>
+            </h1>{" "}
             <p
               id="text"
               className="mx-auto mt-4 font-bold max-w-xl text-gray-800
               sm:text-xl sm:leading-relaxed"
             >
-              I like to code things from scratch, and enjoy bringing ideas to
-              life in the browser.
+              I adore creating things from scratch in code and seeing my
+              creations come to life in the browser.
             </p>
-
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a href="https://drive.google.com/file/d/1WAdTsZ8UrHGxjqIU8E2-VuezzIBcx4aH/view?usp=share_link">
                 {" "}

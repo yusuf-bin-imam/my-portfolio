@@ -9,14 +9,7 @@ import {
 import { Link, NavLink } from "react-router-dom";
 
 export default function Example() {
-  const [openNav, setOpenNav] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false)
-    );
-  }, []);
+  const [active, setActive] = useState(false);
 
   const navList = (
     <ul
@@ -54,8 +47,8 @@ export default function Example() {
   );
 
   return (
-    <div className="border-b-2 bg-indigo-200  border-black">
-      <Navbar className="mx-auto max-w-screen-xl bg-indigo-200 h-24 border-none  py-2 px-4 lg:px-8 lg:py-4">
+    <div className="">
+      <Navbar className=" lg:block hidden    mx-auto max-w-screen-xl  h-24 border-none  py-2 px-4 lg:px-8 lg:py-4">
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
@@ -75,7 +68,7 @@ export default function Example() {
           <div className="hidden lg:block">{navList}</div>
 
           <Link id="title" to={"/contactDetails"}>
-            <button className="rounded-full text-black font-bold focus:border-none border-black border hidden lg:inline-block py-3 px-12 hover:bg-purple-500 ">
+            <button className="rounded-full text-purple-600 hover:text-white font-bold focus:border-none hover:border-none border-purple-500 border hidden lg:inline-block py-3 px-12 hover:bg-purple-500 ">
               Contact
             </button>
           </Link>
@@ -84,9 +77,9 @@ export default function Example() {
             variant="text"
             className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
             ripple={false}
-            onClick={() => setOpenNav(!openNav)}
+            onClick={() => setActive(!active)}
           >
-            {openNav ? (
+            {active ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -118,18 +111,15 @@ export default function Example() {
             )}
           </IconButton>
         </div>
-        <MobileNav open={openNav}>
-          <div className="py-10  bg-[#c6c6c6]">
-            {navList}
-
-            <Link
-              id="title"
-              className="text-black font-bold"
-              to={"/contactDetails"}
-            >
-              <button>Contact</button>
-            </Link>
-          </div>
+        <MobileNav open={active}>
+          {navList}
+          <Link
+            id="title"
+            className="text-black font-bold"
+            to={"/contactDetails"}
+          >
+            <button>Contact</button>
+          </Link>
         </MobileNav>
       </Navbar>
     </div>

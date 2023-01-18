@@ -81,3 +81,36 @@ nav a.active {
   transition-delay: 0s;
   transition-property: all;
 }
+#main-title {
+  font-family: "Sofia Sans", sans-serif;
+}
+/* mobile navs  */
+ol {
+  /* background: rgba(0, 0, 0, 0.3); */
+  /* width: max-content; */
+  /* display: block; */
+  padding: 12px 24px;
+  z-index: 2;
+  position: fixed;
+
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  display: flex;
+  border: 2px solid black;
+  gap: 2rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(20px);
+}
+
+.moblinks {
+  background-color: rgb(30, 41, 59);
+  border-radius: 5px;
+  opacity: 0.8;
+  color: white;
+  padding: 10px;
+}
+ol a.active {
+  color: rgb(10, 10, 10);
+  background-color: rgb(130, 159, 149);
+}

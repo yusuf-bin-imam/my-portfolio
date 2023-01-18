@@ -34,11 +34,18 @@ const Contact = () => {
           <div class="flex flex-col text-center w-full mb-12">
             <h1
               id="title"
+              data-aos="fade-down"
+              data-aos-duration="1500"
               class="sm:text-3xl text-3xl font-bold title-font mb-2 text-white"
             >
-              Want to discuss about Projects ?
+              Want to work together or have any questions?
             </h1>
-            <p id="title" class="lg:w-2/3 mx-auto text-white text-2xl ">
+            <p
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              id="title"
+              class="lg:w-2/3 mx-auto text-white text-2xl "
+            >
               I'm always Open.
             </p>
           </div>
@@ -46,7 +53,11 @@ const Contact = () => {
             <div class="lg:w-1/2 md:w-2/3 mx-auto">
               <div class="flex flex-wrap -m-2">
                 <div class="p-2 w-1/2">
-                  <div class="relative">
+                  <div
+                    class="relative"
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                  >
                     <input
                       type="text"
                       id="inputTxt"
@@ -59,7 +70,11 @@ const Contact = () => {
                 </div>
 
                 <div class="p-2 w-1/2">
-                  <div class="relative">
+                  <div
+                    class="relative"
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                  >
                     <input
                       type="email"
                       placeholder="Enter your email"
@@ -72,7 +87,11 @@ const Contact = () => {
                   </div>
                 </div>
                 <div class="p-2 w-full">
-                  <div class="relative">
+                  <div
+                    class="relative"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
                     <textarea
                       id="inputTxt"
                       name="message"
@@ -87,6 +106,8 @@ const Contact = () => {
               </div>
             </div>
             <button
+              data-aos="fade-up"
+              data-aos-duration="1500"
               id="title"
               className="bg-yellow-500 border border-black px-10 rounded-md text-black font-bold py-3"
               disabled={disable ? true : false}

@@ -1,0 +1,22 @@
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  /* width: max-content; */
+  /* display: block; */
+  padding: 12px 24px;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  display: flex;
+  gap: 2rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+
+.nav-links {
+  background-color: rgb(30, 41, 59);
+  opacity: 0.8;
+  border-radius: 9999px;
+  padding: 10px;
+}
