@@ -9,8 +9,6 @@ import {
 import { Link, NavLink } from "react-router-dom";
 
 export default function Example() {
-  const [active, setActive] = useState(false);
-
   const navList = (
     <ul
       id="navlinks"
@@ -72,55 +70,7 @@ export default function Example() {
               Contact
             </button>
           </Link>
-
-          <IconButton
-            variant="text"
-            className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-            ripple={false}
-            onClick={() => setActive(!active)}
-          >
-            {active ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                className="h-6 bg-black w-6"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6  text-black w-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            )}
-          </IconButton>
         </div>
-        <MobileNav open={active}>
-          {navList}
-          <Link
-            id="title"
-            className="text-black font-bold"
-            to={"/contactDetails"}
-          >
-            <button>Contact</button>
-          </Link>
-        </MobileNav>
       </Navbar>
     </div>
   );

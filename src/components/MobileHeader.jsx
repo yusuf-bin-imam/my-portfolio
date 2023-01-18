@@ -11,17 +11,29 @@ const MobileHeader = () => {
   return (
     <div className="lg:hidden">
       <ol className="navigation">
-        <NavLink to={"/"} className="moblinks">
+        <NavLink
+          to={"/"}
+          className="moblinks transition hover:translate-x-2 hover:translate-y-2"
+        >
           <AiOutlineHome />
         </NavLink>
-        <NavLink to={"/blogs"} className="moblinks">
+        <NavLink
+          to={"/blogs"}
+          className="moblinks transition hover:translate-x-2 hover:translate-y-2"
+        >
           <BsBook />{" "}
         </NavLink>
-        <NavLink to={"/project"} className="moblinks">
+        <NavLink
+          to={"/project"}
+          className="moblinks  transition hover:translate-x-2 hover:translate-y-2"
+        >
           <SiPolymerproject />
         </NavLink>
-        <NavLink to={"/contact"} className="moblinks">
-          <BiMessageEdit />
+        <NavLink
+          to={"/contact"}
+          className="moblinks transition hover:translate-x-2 hover:translate-y-2"
+        >
+          <BiMessageEdit className="" />
         </NavLink>
       </ol>
     </div>
