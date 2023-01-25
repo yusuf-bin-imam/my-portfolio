@@ -9,7 +9,11 @@ import MyProject from "./MyProject";
 const Home = () => {
   return (
     <div className="min-h-screen mt-14">
-      <section className=" bg-white  text-white">
+      <section
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        className=" bg-white  text-white"
+      >
         <img
           src="https://www.linkpicture.com/q/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail-removebg-preview-1.png"
           alt=""
@@ -31,7 +35,7 @@ const Home = () => {
                   <Typical
                     loop={Infinity}
                     wrapper="h2"
-                    steps={["developer", 3000, " engineer", 3000]}
+                    steps={["developer", 3000]}
                   />
                 </span>
               </p>

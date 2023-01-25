@@ -7,6 +7,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Link, NavLink } from "react-router-dom";
+import Drakmode from "./Drakmode";
 
 export default function Example() {
   const navList = (
@@ -37,7 +38,7 @@ export default function Example() {
 
       <NavLink
         to={"blogs"}
-        className="mr-5 font-bold  text-black hover:text-green-800 "
+        className="mr-5 font-bold text-black hover:text-green-800 "
       >
         Blogs
       </NavLink>
@@ -64,12 +65,14 @@ export default function Example() {
             </Link>
           </Typography>
           <div className="hidden lg:block">{navList}</div>
-
-          <Link id="title" to={"/contactDetails"}>
-            <button className="rounded-full text-purple-600 hover:text-white font-bold focus:border-none hover:border-none border-purple-500 border hidden lg:inline-block py-3 px-12 hover:bg-purple-500 ">
-              Contact
-            </button>
-          </Link>
+          <div className="flex justify-between">
+            <Link id="title" to={"/contactDetails"}>
+              <button className="rounded-full text-purple-600 hover:text-white font-bold focus:border-none hover:border-none border-purple-500 border hidden lg:inline-block py-3 px-12 hover:bg-purple-500 ">
+                Contact
+              </button>
+            </Link>
+            {/* <Drakmode /> */}
+          </div>
         </div>
       </Navbar>
     </div>

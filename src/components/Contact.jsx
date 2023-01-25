@@ -1,14 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Typical from "react-typical";
 
 const Contact = () => {
   return (
-    <div className="bg-[#6E07F3]">
-      <div className="font-bold bg-[#f7e8e8] rounded-t-2xl py-10 max-w-screen-lg mx-auto  ">
-        <h2 id="contact" className="mt-10 text-3xl font-bold">
-          Lets talk
+    <div>
+      <div className="font-bold rounded py-10 max-w-screen-xl mx-auto  ">
+        <h2
+          id="title"
+          className="mt-10 flex text-black justify-center text-3xl font-bold"
+        >
+          <span className="mr-2"> Lets </span>
+          <Typical
+            className="text-red-700"
+            steps={["talk", 3000, "discuss", 2000]}
+            loop={Infinity}
+            wrapper="P"
+          />
         </h2>
-        <p id="title" className=" text-xl  mt-3">
+        <p id="title" className=" text-xl text-black mt-3">
           Fell free to contact with me via
           <a
             className="text-blue-500 hover:text-green-600  font-bold ml-2 text-xl"
@@ -17,7 +27,7 @@ const Contact = () => {
             Email Me
           </a>
         </p>
-        <p id="title" className=" text-xl ">
+        <p id="title" className="text-black text-xl ">
           or fill the from at
           <Link to={"/contactDetails"}>
             <p
@@ -28,6 +38,17 @@ const Contact = () => {
             </p>
           </Link>
         </p>
+      </div>
+      <div className=" rounded-lg w-28 -mt-3 text-black  mx-auto flex justify-around lg:hidden">
+        <a href="https://web.facebook.com/profile.php?id=100032670966425">
+          <i class="uil uil-facebook-f text-2xl"></i>
+        </a>
+        <a href="https://github.com/RedEye75">
+          <i class="uil uil-github-alt text-2xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yusuf-bin-imam/">
+          <i class="uil uil-linkedin-alt text-2xl"></i>
+        </a>
       </div>
       <div>
         <img

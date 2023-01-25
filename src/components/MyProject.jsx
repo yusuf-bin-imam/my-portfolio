@@ -7,11 +7,11 @@ const MyProject = () => {
   return (
     <div className="min-h-screen max-w-screen-xl mx-auto">
       <div className="mt-10">
-        <h3 id="title" className="text-3xl  font-bold ">
-          My Recent work
-        </h3>
-        <p id="text" className="font-bold text-xl mt-3">
-          The projects I've worked on are listed here.
+        <h3 id="title" className="text-3xl text-black font-bold ">
+          My Recent <span className="text-red-700"> work</span>
+        </h3>{" "}
+        <p id="text" className="font-bold  text-black text-xl mt-3">
+          Here is a list of the projects that I've worked on.
         </p>
       </div>
       <section class="text-gray-600 hidden lg:block body-font overflow-hidden">
@@ -56,10 +56,14 @@ const MyProject = () => {
           </div>
         </div>
       </section>
-
       <section className="grid m-5 lg:grid-cols-2 gap-5 ">
         <div className="lg:hidden sm:block">
-          <a href="#" class="group relative rounded-xl block bg-black">
+          <a
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            href="#"
+            class="group relative rounded-xl block bg-black"
+          >
             <img
               alt="Developer"
               src={plumboy}
@@ -71,7 +75,10 @@ const MyProject = () => {
                 <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0  group-hover:opacity-100">
                   <p class="text-2xl font-bold text-white">Plumboy</p>
                   <p class="text-md text-white">Best plumbing service</p>
-                  <button className="px-10 py-3 bg-yellow-500 rounded-md font-bold mt-2">
+                  <button
+                    id="title"
+                    className="px-10 py-3 bg-yellow-500 text-black rounded-md font-bold mt-2"
+                  >
                     <a href="https://plumboy-37ca4.web.app/">Live_View</a>
                   </button>
                 </div>
@@ -80,7 +87,12 @@ const MyProject = () => {
           </a>
         </div>
         <div>
-          <a href="#" class="group relative rounded-xl block bg-black">
+          <a
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            href="https://smartzone-bb172.web.app/"
+            class="group relative rounded-xl block bg-black"
+          >
             <img
               alt="Developer"
               src={smartzone}
@@ -92,7 +104,10 @@ const MyProject = () => {
                 <div class="translate-y-8 transform  opacity-0 transition-all  group-hover:translate-y-0 group-hover:opacity-100">
                   <p class="text-2xl font-bold text-white">SmartZone</p>
                   <p class="text-md text-white">A complete tech house</p>
-                  <button className="px-10  py-3 bg-cyan-500 rounded-md font-bold mt-2">
+                  <button
+                    id="title"
+                    className="px-10  py-3 bg-cyan-500 text-black rounded-md font-bold mt-2"
+                  >
                     Live_View
                   </button>
                 </div>
@@ -101,7 +116,12 @@ const MyProject = () => {
           </a>
         </div>
         <div>
-          <a href="#" class="group relative rounded-xl block bg-black">
+          <a
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            href="#"
+            class="group relative rounded-xl block bg-black"
+          >
             <img
               alt="Developer"
               src={quiz}
@@ -115,7 +135,10 @@ const MyProject = () => {
                   <p class="text-md text-white">
                     Unlocking knowledge at the speed of thought.
                   </p>
-                  <button className="px-10 py-3 bg-yellow-500 rounded-md font-bold mt-2">
+                  <button
+                    id="title"
+                    className="px-10 py-3 bg-yellow-500 text-black rounded-md font-bold mt-2"
+                  >
                     <a href="https://quiz-crackhers-assignments.netlify.app/">
                       Live_View
                     </a>
@@ -126,7 +149,12 @@ const MyProject = () => {
           </a>
         </div>
         <div>
-          <a href="#" class="group relative rounded-xl block bg-black">
+          <a
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            href="https://skillshare-authentication.web.app/"
+            class="group relative rounded-xl block bg-black"
+          >
             <img
               alt="Developer"
               src={skillshare}
@@ -140,15 +168,27 @@ const MyProject = () => {
                   <p class="text-md text-white">
                     Providing amazing online courses.
                   </p>
-                  <button className="px-10 py-3 bg-purple-500 rounded-md font-bold mt-2">
+                  <button
+                    id="title"
+                    className="px-10 py-3 bg-purple-500 text-black rounded-md font-bold mt-2"
+                  >
                     Live_View
                   </button>
                 </div>
               </div>
             </div>
-          </a>
+          </a>{" "}
         </div>
-      </section>
+      </section>{" "}
+      <a href="https://github.com/RedEye75">
+        <button
+          data-aos="fade-left"
+          id="title"
+          className="bg-[#5E08F4] mx-auto text-white transition-all hover:scale-110 font-bold py-3 px-10 rounded border border-black "
+        >
+          See More{" "}
+        </button>
+      </a>
     </div>
   );
 };

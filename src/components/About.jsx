@@ -1,4 +1,6 @@
 import React from "react";
+import { GoArrowSmallRight } from "react-icons/go";
+import { FaNodeJs } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -26,7 +28,8 @@ const About = () => {
             className="lg:mt-1 mx-auto"
           >
             <h2 className="text-4xl -ml-1 mb-3 mt-6 text-white lg:text-start font-bold">
-              Hi there..! I’m Yusuf <br />
+              Hi there..! I’m <span className="text-[#47c3e9]">Yusuf</span>{" "}
+              <br />
               Nice to meet you.
             </h2>
             <p className="text-gray-200 lg:text-start font-medium text-xl">
@@ -36,6 +39,24 @@ const About = () => {
               to make a career as a web developer. I am consistently giving this
               place my all in an effort to achieve my aim.
             </p>
+            {/* <p className="text-black mt-3 lg:text-start font-medium text-xl">
+              Here are a few technologies I’ve been working with recently
+            </p>
+            <div className="grid grid-cols-2 text-gray-300">
+              <p className="flex">
+                <GoArrowSmallRight className="mt-1" /> JavaScript (ES6)
+              </p>
+              <p className="flex">
+                <GoArrowSmallRight className="mt-1" /> ReactJS
+              </p>
+              <p className="flex">
+                <GoArrowSmallRight className="mt-1" />
+                NodeJS
+              </p>
+              <p className="flex">
+                <GoArrowSmallRight className="mt-1" /> MongoDB
+              </p>
+            </div> */}
           </div>
         </div>
       </div>
