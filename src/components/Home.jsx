@@ -30,7 +30,7 @@ const Home = () => {
             >
               Yusuf Bin Imam <br />
               <p className="text-lg  flex items-center justify-center">
-                <span className="mr-2">Frontend </span>
+                <span className="mr-2">Mern Stack </span>
                 <span>
                   <Typical
                     loop={Infinity}
@@ -50,10 +50,9 @@ const Home = () => {
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a href="https://drive.google.com/file/d/1WAdTsZ8UrHGxjqIU8E2-VuezzIBcx4aH/view?usp=share_link">
-                {" "}
                 <button
                   id="text"
-                  className="px-10 py-3 bg-yellow-500 rounded-md border border-black text-black font-bold"
+                  className="px-10 py-3  bg-yellow-500 rounded-md border border-black text-black font-bold"
                 >
                   Resume
                 </button>
