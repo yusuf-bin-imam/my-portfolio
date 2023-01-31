@@ -49,20 +49,6 @@ const Contact = () => {
             <i class="uil uil-linkedin-alt text-2xl"></i>
           </a>
         </div>
-        <button className="mt-10">
-          <span>Social</span>
-          <div class="container">
-            <a href="https://web.facebook.com/profile.php?id=100032670966425">
-              <i class="uil uil-facebook-f text-2xl text-black  bg-blue-600 pt-0 p-2 rounded-full"></i>
-            </a>
-            <a href="https://github.com/RedEye75">
-              <i class="uil uil-github-alt text-2xl  bg-black pt-0 p-2 rounded-full"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/yusuf-bin-imam/">
-              <i class="uil uil-linkedin-alt text-2xl text-black bg-blue-600 pt-0 p-2 rounded-full"></i>
-            </a>
-          </div>
-        </button>
       </div>
     </div>
   );

@@ -116,15 +116,15 @@ ol a.active {
   color: rgb(10, 10, 10);
   background-color: #03bdec;
 }
-button {
+/* button {
   height: 4em;
   width: 15em;
   border: none;
   border-radius: 40px;
   background-color: #fff;
-}
+} */
 
-button span {
+/* button span {
   z-index: 1;
   display: inline-block;
   background-color: #6e07f3;
@@ -159,4 +159,4 @@ button:hover span {
 button:hover .container {
   z-index: 2;
   width: 100%;
-}
+} */
