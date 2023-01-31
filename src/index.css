@@ -97,7 +97,7 @@ ol {
 
   left: 50%;
   transform: translateX(-50%);
-  bottom: 1rem;
+  bottom: 4rem;
   display: flex;
   border: 2px solid black;
   gap: 2rem;
@@ -108,11 +108,55 @@ ol {
 .moblinks {
   background-color: rgb(30, 41, 59);
   border-radius: 4px;
-  opacity: 0.8;
+  opacity: 2;
   color: white;
   padding: 10px;
 }
 ol a.active {
   color: rgb(10, 10, 10);
   background-color: #03bdec;
+}
+button {
+  height: 4em;
+  width: 15em;
+  border: none;
+  border-radius: 40px;
+  background-color: #fff;
+}
+
+button span {
+  z-index: 1;
+  display: inline-block;
+  background-color: #6e07f3;
+  height: 3em;
+  width: 11.5em;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 55px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  transition: all 0.5s;
+}
+
+button .container {
+  z-index: -1;
+  width: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-50px);
+  transition: all 0.4s;
+}
+
+button .container a {
+  padding: 0 10px;
+}
+
+button:hover span {
+  width: 0;
+}
+
+button:hover .container {
+  z-index: 2;
+  width: 100%;
 }

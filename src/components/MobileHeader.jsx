@@ -11,17 +11,17 @@ const MobileHeader = () => {
   return (
     <div className="lg:hidden">
       <ol className="navigation">
-        <NavLink to={"/"} className="moblinks ">
+        <NavLink to={"/"} className="moblinks  hover:bg-[#03bdec]">
           <AiOutlineHome />
         </NavLink>
-        <NavLink to={"/blogs"} className="moblinks ">
+        <NavLink to={"/blogs"} className="moblinks  hover:bg-[#03bdec]">
           <BsBook />{" "}
         </NavLink>
-        <NavLink to={"/project"} className="moblinks ">
+        <NavLink to={"/project"} className="moblinks  hover:bg-[#03bdec]">
           <SiPolymerproject />
         </NavLink>
-        <NavLink to={"/contact"} className="moblinks">
-          <BiMessageEdit className="" />
+        <NavLink to={"/contact"} className="moblinks  hover:bg-[#03bdec]">
+          <BiMessageEdit />
         </NavLink>
       </ol>
     </div>

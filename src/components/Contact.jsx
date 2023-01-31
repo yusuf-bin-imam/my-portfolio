@@ -4,7 +4,7 @@ import Typical from "react-typical";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="flex justify-center items-center">
       <div className="font-bold rounded py-10 max-w-screen-xl mx-auto  ">
         <h2
           id="title"
@@ -38,25 +38,31 @@ const Contact = () => {
             </p>
           </Link>
         </p>
-      </div>
-      <div className=" rounded-lg w-28 -mt-3 text-black  mx-auto flex justify-around lg:hidden">
-        <a href="https://web.facebook.com/profile.php?id=100032670966425">
-          <i class="uil uil-facebook-f text-2xl"></i>
-        </a>
-        <a href="https://github.com/RedEye75">
-          <i class="uil uil-github-alt text-2xl"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/yusuf-bin-imam/">
-          <i class="uil uil-linkedin-alt text-2xl"></i>
-        </a>
-      </div>
-      <div>
-        <img
-          className="w-72 mx-auto ml-10 mb-32"
-          // src="https://cdn3d.iconscout.com/3d/premium/thumb/contact-us-5467852-4568171.png"
-          src="https://cdn-icons-mp4.flaticon.com/512/8722/8722677.mp4"
-          alt=""
-        />
+        <div className="mt-3 bg-gray-400 py-3 px-20 gap-5 border border-black  rounded-lg w-28  text-black  mx-auto flex justify-around lg:hidden">
+          <a href="https://web.facebook.com/profile.php?id=100032670966425">
+            <i class="uil uil-facebook-f text-2xl"></i>
+          </a>
+          <a href="https://github.com/RedEye75">
+            <i class="uil uil-github-alt text-2xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yusuf-bin-imam/">
+            <i class="uil uil-linkedin-alt text-2xl"></i>
+          </a>
+        </div>
+        <button className="mt-10">
+          <span>Social</span>
+          <div class="container">
+            <a href="https://web.facebook.com/profile.php?id=100032670966425">
+              <i class="uil uil-facebook-f text-2xl text-black  bg-blue-600 pt-0 p-2 rounded-full"></i>
+            </a>
+            <a href="https://github.com/RedEye75">
+              <i class="uil uil-github-alt text-2xl  bg-black pt-0 p-2 rounded-full"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/yusuf-bin-imam/">
+              <i class="uil uil-linkedin-alt text-2xl text-black bg-blue-600 pt-0 p-2 rounded-full"></i>
+            </a>
+          </div>
+        </button>
       </div>
     </div>
   );

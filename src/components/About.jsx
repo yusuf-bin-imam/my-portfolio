@@ -1,6 +1,4 @@
 import React from "react";
-import { GoArrowSmallRight } from "react-icons/go";
-import { FaNodeJs } from "react-icons/fa";
 
 const About = () => {
   return (

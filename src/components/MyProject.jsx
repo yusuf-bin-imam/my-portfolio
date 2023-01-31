@@ -165,9 +165,7 @@ const MyProject = () => {
               <div class="mt-48 rounded-xl">
                 <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                   <p class="text-2xl font-bold text-white">Skill_Share</p>
-                  <p class="text-md text-white">
-                    Providing amazing online courses.
-                  </p>
+                  <p class="text-md text-white">Find your next course.</p>
                   <button
                     id="title"
                     className="px-10 py-3 bg-purple-500 text-black rounded-md font-bold mt-2"
