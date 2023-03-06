@@ -31,7 +31,7 @@ const About = () => {
               Nice to meet you.
             </h2>
             <p className="text-gray-200 lg:text-start font-medium text-xl">
-              I'm a junior Mern Stack programmer. I've been working in this
+              I'm a junior Mern Stack Developer. I've been working in this
               industry for a year. I've created some projects at this time for
               educational purposes.Here are a full-stack also. My objective is
               to make a career as a web developer. I am consistently giving this
