@@ -49,13 +49,13 @@ const Home = () => {
               creations come to life in the browser.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a href="https://drive.google.com/file/d/1WAdTsZ8UrHGxjqIU8E2-VuezzIBcx4aH/view?usp=share_link">
-                <button
-                  id="text"
-                  className="px-10 py-3  bg-yellow-500 rounded-md border border-black text-black font-bold"
-                >
-                  Resume
-                </button>
+              <a
+                id="text"
+                className="px-10 py-3  bg-yellow-500 rounded-md border border-black text-black font-bold"
+                href="resume.pdf"
+                download
+              >
+                Resume
               </a>
 
               <Link
