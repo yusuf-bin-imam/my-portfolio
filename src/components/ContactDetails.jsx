@@ -10,8 +10,8 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_0z0zm1d",
-        "template_9snooxo",
+        "service_nu5c957",
+        "template_hhwbi36",
         form.current,
         "FmqreMkLnogSjg1Zs"
       )
@@ -23,6 +23,7 @@ const Contact = () => {
           setDisable(true);
         },
         (error) => {
+          toast.error("message not sent");
           console.log(error.text);
         }
       );
