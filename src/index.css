@@ -15,25 +15,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-#name {
-  /* font-family: "Passions Conflict", cursive; */
-  font-family: "Oleo Script Swash Caps", cursive;
-}
-#text {
+
+#title {
   font-family: "Noto Serif", serif;
 }
 
-#title {
-  /* font-family: "Alegreya", serif; */
-  font-family: "Noto Serif", serif;
-  /* font-family: "Space Grotesk", sans-serif; */
-}
-#navlinks {
-  font-family: "Sofia Sans", sans-serif;
-}
-#inputTxt {
-  font-family: "Sofia Sans", sans-serif;
-}
 #container {
   padding: 80px;
 }

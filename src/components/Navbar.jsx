@@ -7,7 +7,6 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Link, NavLink } from "react-router-dom";
-import Drakmode from "./Drakmode";
 
 const Header = () => {
   const navStyle = ({ isActive }) => {
@@ -15,6 +14,13 @@ const Header = () => {
       borderBottom: isActive ? "2px solid purple" : "none",
     };
   };
+  // for close dropdown after click
+  const [isOpen, setOpen] = useState(false);
+
+  const closeDropDown = () => {
+    setOpen(false);
+  };
+
   const navList = (
     <ul
       id="navlinks"
@@ -38,10 +44,25 @@ const Header = () => {
 
       <NavLink
         style={navStyle}
-        to={"/project"}
-        className="mr-5 text-black font-bold hover:text-green-800"
+        to={"/projects"}
+        className="mr-5  text-black font-bold "
       >
         Projects
+        {/* <ul
+          tabIndex={0}
+          className="dropdown-content menu p-2 shadow bg-white  w-52"
+        >
+          <li>
+            <Link onClick={closeDropDown} to={"/"}>
+              Personal Projects
+            </Link>
+          </li>
+          <li>
+            <Link onClick={closeDropDown} to={"/"}>
+              Team Projects
+            </Link>
+          </li>
+        </ul> */}
       </NavLink>
 
       <NavLink

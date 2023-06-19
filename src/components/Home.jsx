@@ -5,6 +5,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Image from "./Image";
 import MyProject from "./MyProject";
+import { BsDownload } from "react-icons/bs";
 
 const Home = () => {
   return (
@@ -51,11 +52,12 @@ const Home = () => {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 id="text"
-                className="px-10 py-3  bg-yellow-500 rounded-md border border-black text-black font-bold"
-                href="resume.pdf"
+                className="px-10 py-3 flex bg-yellow-500 rounded-md border border-black text-black font-bold"
+                href="Yusuf-Resume.pdf"
                 download
               >
                 Resume
+                <BsDownload className="mt-1 font-bold text-md ml-2" />
               </a>
 
               <Link

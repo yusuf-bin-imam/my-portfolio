@@ -7,6 +7,7 @@ import Error from "../components/Error";
 import Home from "../components/Home";
 import MyProject from "../components/MyProject";
 import Main from "../Layout/Main";
+import Projects from "../components/Projects";
 
 const router = createBrowserRouter([
   {
@@ -34,9 +35,13 @@ const router = createBrowserRouter([
         element: <ContactDetails />,
       },
       {
-        path: "project",
-        element: <MyProject />,
+        path: "/projects",
+        element: <Projects />,
       },
+      // {
+      //   path: "/project",
+      //   element: <MyProject />,
+      // },
       {
         path: "*",
         element: <Error />,
