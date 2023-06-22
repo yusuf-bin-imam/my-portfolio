@@ -51,7 +51,10 @@ const Sidebar = () => {
           unmount: { scale: 0, y: 25 },
         }}
       >
-        <a className="ml-3  text-gray-500 " href="https://github.com/RedEye75">
+        <a
+          className="ml-3  text-gray-500 "
+          href="https://github.com/yusuf-bin-imam"
+        >
           <FaGithub className="" />
         </a>
       </Tooltip>

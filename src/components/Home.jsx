@@ -51,8 +51,8 @@ const Home = () => {
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
-                id="text"
-                className="px-10 py-3 flex bg-yellow-500 rounded-md border border-black text-black font-bold"
+                id="title"
+                className="px-10 py-3 flex bg-yellow-500  border border-yellow-500 text-black font-bold"
                 href="Yusuf-Resume.pdf"
                 download
               >
@@ -61,9 +61,9 @@ const Home = () => {
               </a>
 
               <Link
-                id="text"
+                id="title"
                 to={"/contact"}
-                className=" px-10 py-3 bg-[#6E07F3] rounded-md border border-black text-white font-bold"
+                className=" px-10 py-3 bg-[#6E07F3]  border border-[#6E07F3] text-white font-bold"
               >
                 Hire Me
               </Link>
@@ -73,8 +73,6 @@ const Home = () => {
       </section>
       <Image />
       <About />
-
-      <MyProject />
       <Contact />
     </div>
   );
