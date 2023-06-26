@@ -4,23 +4,20 @@ import Typical from "react-typical";
 import About from "./About";
 import Contact from "./Contact";
 import Image from "./Image";
-import MyProject from "./MyProject";
 import { BsDownload } from "react-icons/bs";
+import hero from "../../src/image/programmer.png";
+// import hero from "../../src/image/hero.jpg";
 
 const Home = () => {
   return (
-    <div className="min-h-screen mt-14">
+    <div className="min-h-screen">
       <section
         data-aos="fade-left"
         data-aos-duration="1500"
         className=" bg-white  text-white"
       >
-        <img
-          src="https://www.linkpicture.com/q/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail-removebg-preview-1.png"
-          alt=""
-          className="w-48 mx-auto"
-        />
-        <h1 id="title" className="text-md mt-3  font-bold text-black">
+        <img src={hero} alt="developerImage" className="w-72 mx-auto" />
+        <h1 id="title" className="text-md   font-bold text-black">
           Hello I'm
         </h1>
         <div className="mx-auto  px-4  lg:flex  lg:items-center">
@@ -52,8 +49,8 @@ const Home = () => {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 id="title"
-                className="px-10 py-3 flex bg-yellow-500  border border-yellow-500 text-black font-bold"
-                href="Yusuf-Resume.pdf"
+                className="px-10 py-3 flex bg-[#5be9b9]  border border-[#5be9b9] text-black font-bold"
+                href="yusufResume.pdf"
                 download
               >
                 Resume

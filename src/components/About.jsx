@@ -1,4 +1,5 @@
 import React from "react";
+import aboutImage from "../../src/image/about.png";
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
           >
             <img
               className="w-72 mx-auto ml-10 mb-5 lg:mb-32"
-              src="https://cdn-icons-png.flaticon.com/512/6840/6840478.png"
+              src={aboutImage}
               alt=""
             />
           </div>
