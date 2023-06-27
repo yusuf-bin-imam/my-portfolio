@@ -17,7 +17,7 @@ const MobileHeader = () => {
         <NavLink to={"/blogs"} className="moblinks  hover:bg-[#03bdec]">
           <BsBook />{" "}
         </NavLink>
-        <NavLink to={"/project"} className="moblinks  hover:bg-[#03bdec]">
+        <NavLink to={"/projects"} className="moblinks  hover:bg-[#03bdec]">
           <SiPolymerproject />
         </NavLink>
         <NavLink to={"/contact"} className="moblinks  hover:bg-[#03bdec]">
