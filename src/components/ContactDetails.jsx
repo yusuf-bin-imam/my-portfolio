@@ -30,14 +30,14 @@ const Contact = () => {
   };
   return (
     <div className=" min-h-screen bg-[#6E07F3]">
-      <section class="text-gray-600 body-font relative">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-12">
+      <section className="text-gray-600 body-font relative">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-col text-center w-full mb-12">
             <h1
               id="title"
               data-aos="fade-down"
               data-aos-duration="1500"
-              class="sm:text-3xl text-3xl font-bold title-font mb-2 text-white"
+              className="sm:text-3xl text-3xl font-bold title-font mb-2 text-white"
             >
               Want to work together or have any questions?
             </h1>
@@ -45,17 +45,17 @@ const Contact = () => {
               data-aos="fade-down"
               data-aos-duration="1500"
               id="title"
-              class="lg:w-2/3 mx-auto text-white text-2xl "
+              className="lg:w-2/3 mx-auto text-white text-2xl "
             >
               I'm always Open.
             </p>
           </div>
           <form ref={form} onSubmit={sendEmail}>
-            <div class="lg:w-1/2 md:w-2/3 mx-auto">
-              <div class="flex flex-wrap -m-2">
-                <div class="p-2 w-1/2">
+            <div className="lg:w-1/2 md:w-2/3 mx-auto">
+              <div className="flex flex-wrap -m-2">
+                <div className="p-2 w-1/2">
                   <div
-                    class="relative"
+                    className="relative"
                     data-aos="fade-right"
                     data-aos-duration="1500"
                   >
@@ -65,14 +65,14 @@ const Contact = () => {
                       placeholder="Enter your name"
                       name="user_name"
                       required
-                      class="w-full border-black border-2 bg-white rounded-md  focus:bg-white focus:ring-2  text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className="w-full border-black border-2 bg-white rounded-md  focus:bg-white focus:ring-2  text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
                 </div>
 
-                <div class="p-2 w-1/2">
+                <div className="p-2 w-1/2">
                   <div
-                    class="relative"
+                    className="relative"
                     data-aos="fade-left"
                     data-aos-duration="1500"
                   >
@@ -82,14 +82,14 @@ const Contact = () => {
                       id="inputTxt"
                       name="user_email"
                       required
-                      class="w-full bg-white rounded-md border-black border-2 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className="w-full bg-white rounded-md border-black border-2 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                       data-temp-mail-org="0"
                     />
                   </div>
                 </div>
-                <div class="p-2 w-full">
+                <div className="p-2 w-full">
                   <div
-                    class="relative"
+                    className="relative"
                     data-aos="fade-up"
                     data-aos-duration="1500"
                   >
@@ -98,7 +98,7 @@ const Contact = () => {
                       name="message"
                       required
                       placeholder="Additional details"
-                      class="w-full bg-white rounded-md border-black border-2 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                      className="w-full bg-white rounded-md border-black border-2 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                       data-gramm="false"
                       wt-ignore-input="true"
                     ></textarea>

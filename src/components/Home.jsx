@@ -5,7 +5,8 @@ import About from "./About";
 import Contact from "./Contact";
 import Image from "./Image";
 import { BsDownload } from "react-icons/bs";
-import hero from "../../src/image/programmer.png";
+import hero from "../../src/image/hero3.jpg";
+import MySkills from "./MySkills/MySkills";
 // import hero from "../../src/image/hero.jpg";
 
 const Home = () => {
@@ -16,8 +17,8 @@ const Home = () => {
         data-aos-duration="1500"
         className=" bg-white  text-white"
       >
-        <img src={hero} alt="developerImage" className="w-72 mx-auto" />
-        <h1 id="title" className="text-md   font-bold text-black">
+        <img src={hero} alt="developerImage" className="w-80 mx-auto" />
+        <h1 id="title" className="text-md -mt-7  font-bold text-black">
           Hello I'm
         </h1>
         <div className="mx-auto  px-4  lg:flex  lg:items-center">
@@ -70,6 +71,7 @@ const Home = () => {
       </section>
       <Image />
       <About />
+      <MySkills />
       <Contact />
     </div>
   );

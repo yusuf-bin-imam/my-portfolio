@@ -40,13 +40,13 @@ const Contact = () => {
         </p>
         <div className="mt-3 bg-gray-400 py-3 px-20 gap-5 border border-black  rounded-lg w-28  text-black  mx-auto flex justify-around lg:hidden">
           <a href="https://web.facebook.com/profile.php?id=100032670966425">
-            <i class="uil uil-facebook-f text-2xl"></i>
+            <i className="uil uil-facebook-f text-2xl"></i>
           </a>
           <a href="https://github.com/RedEye75">
-            <i class="uil uil-github-alt text-2xl"></i>
+            <i className="uil uil-github-alt text-2xl"></i>
           </a>
           <a href="https://www.linkedin.com/in/yusuf-bin-imam/">
-            <i class="uil uil-linkedin-alt text-2xl"></i>
+            <i className="uil uil-linkedin-alt text-2xl"></i>
           </a>
         </div>
       </div>

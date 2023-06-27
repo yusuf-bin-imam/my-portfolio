@@ -16,11 +16,11 @@ const Main = () => {
           <MobileHeader />
         </div>
 
-        <div class=" fixed hidden lg:flex bottom-48 left-20 rounded w-14 h-48 bg-[#2c3c3c] text-white  items-center justify-center">
+        {/* <div className=" fixed hidden lg:flex bottom-48 left-20 rounded w-14 h-48 bg-[#2c3c3c] text-white  items-center justify-center">
           <div className="">
             <Sidebar />
           </div>
-        </div>
+        </div> */}
       </div>
 
       <Footer />

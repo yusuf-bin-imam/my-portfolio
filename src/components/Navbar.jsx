@@ -7,6 +7,11 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Link, NavLink } from "react-router-dom";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { FaFacebook } from "react-icons/fa";
+import fb from "../../src/image/facebook.png";
+import linkedin from "../../src/image/linkedin.png";
+import github from "../../src/image/github.png";
 
 const Header = () => {
   const navStyle = ({ isActive }) => {
@@ -14,12 +19,12 @@ const Header = () => {
       borderBottom: isActive ? "2px solid purple" : "none",
     };
   };
-  // for close dropdown after click
-  const [isOpen, setOpen] = useState(false);
+  // // for close dropdown after click
+  // const [isOpen, setOpen] = useState(false);
 
-  const closeDropDown = () => {
-    setOpen(false);
-  };
+  // const closeDropDown = () => {
+  //   setOpen(false);
+  // };
 
   const navList = (
     <ul
@@ -48,21 +53,6 @@ const Header = () => {
         className="mr-5  text-black font-bold "
       >
         Projects
-        {/* <ul
-          tabIndex={0}
-          className="dropdown-content menu p-2 shadow bg-white  w-52"
-        >
-          <li>
-            <Link onClick={closeDropDown} to={"/"}>
-              Personal Projects
-            </Link>
-          </li>
-          <li>
-            <Link onClick={closeDropDown} to={"/"}>
-              Team Projects
-            </Link>
-          </li>
-        </ul> */}
       </NavLink>
 
       <NavLink
@@ -72,40 +62,53 @@ const Header = () => {
       >
         Blogs
       </NavLink>
+      <div className="flex gap-4">
+        <a className="w-9" href="https://github.com/yusuf-bin-imam">
+          <img src={github} alt="github" />
+        </a>
+        <a
+          className="w-9"
+          href="https://web.facebook.com/profile.php?id=100032670966425"
+        >
+          <img src={fb} alt="Facebook" />
+        </a>
+        <a className="w-9" href="https://www.linkedin.com/in/yusuf-bin-imam/">
+          <img src={linkedin} alt="Linkedin" />
+        </a>
+      </div>
     </ul>
   );
 
   return (
-    <div className="">
-      <Navbar className=" lg:block hidden     mx-auto w-full  h-24 border-none  py-2 px-4 lg:px-8 lg:py-4">
-        <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-          <Typography
-            as="a"
-            href="#"
-            variant="small"
-            className="mr-4 cursor-pointer py-1.5 font-normal"
-          >
-            <Link to={"/"}>
-              <span
-                id="name"
-                className="font-serif text-5xl text-[#6E07F3]  font-extrabold"
-              >
-                Yusuf
-              </span>
-            </Link>
-          </Typography>
-          <div className="hidden lg:block">{navList}</div>
-          <div className="flex justify-between">
-            <Link id="title" to={"/contactDetails"}>
-              <button className="rounded-full text-[#6E07F3] hover:text-white font-bold focus:border-none hover:border-none border-[#6E07F3] border hidden lg:inline-block py-3 px-12 hover:bg-[#6E07F3] ">
-                Contact
-              </button>
-            </Link>
-            {/* <Drakmode /> */}
-          </div>
+    <Navbar className=" lg:block hidden sticky top-0 z-50 shadow-b shadow-lg   mx-auto w-full rounded-none h-24 border-none  py-2 px-4 lg:px-8 lg:py-4">
+      <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+        <Typography
+          as="a"
+          href="#"
+          variant="small"
+          className="mr-4 cursor-pointer py-1.5 font-normal"
+        >
+          <Link to={"/"}>
+            <span
+              id="name"
+              className="font-serif text-5xl text-[#6E07F3]  font-extrabold"
+            >
+              Yusuf
+            </span>
+          </Link>
+        </Typography>
+        <div className="hidden lg:block">{navList}</div>
+
+        <div className="flex justify-between">
+          <Link id="title" to={"/contactDetails"}>
+            <button className="rounded-full text-[#6E07F3] hover:text-white font-bold focus:border-none hover:border-none border-[#6E07F3] border hidden lg:inline-block py-3 px-12 hover:bg-[#6E07F3] ">
+              Contact
+            </button>
+          </Link>
+          {/* <Drakmode /> */}
         </div>
-      </Navbar>
-    </div>
+      </div>
+    </Navbar>
   );
 };
 export default Header;
