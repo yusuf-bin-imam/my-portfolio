@@ -48,78 +48,99 @@ const MoreProjects = () => {
         <div className="h-[300px] w-[323px] mx-auto bg-[#112240]  text-gray-300 font-bold p-5">
           <div className="flex justify-between">
             <h1 id="title" className="text-2xl font-bold">
-              Skillshare
+              Gadget City
             </h1>
             <div className="flex mt-2 ml-5 gap-5">
               <a
                 className="tooltip"
                 data-tip="Client Repo"
-                href="https://github.com/yusuf-bin-imam/SkillShare_Client"
+                href="https://github.com/yusuf-bin-imam/Gadget-City-Client"
               >
                 <FiGithub />
               </a>
               <a
                 className="tooltip"
                 data-tip="Server Repo"
-                href="https://github.com/yusuf-bin-imam/SkillShare_Server"
+                href="https://github.com/yusuf-bin-imam/Gadget-City-Server"
               >
                 <FiGithub />
               </a>
               <a
                 className="tooltip"
                 data-tip="Live Link"
-                href="https://skillshare-authentication.web.app/"
+                href="https://gadget-city-475e9.web.app/"
               >
                 <FiExternalLink />
               </a>
             </div>
           </div>
           <p className="text-start mt-5">
-            Skillshare is an online learning platform offering programming
-            courses to help individuals develop their skills and knowledge in
-            programming.
+            Gadget City: Offering affordable smartwatches, our website aims to
+            provide quality tech gadgets that fit every budget.
           </p>
           <p className="font-bold mt-10  text-start">
-            React I NodeJS I MongoDB I Firebase I Render I Express
+            React I Firebase I Vercel I Express I NodeJS I MongoDB
+          </p>
+        </div>
+
+        <div className="h-[300px] mx-auto w-[323px] bg-[#112240]  text-gray-300 font-bold p-5">
+          <div className="flex justify-between">
+            <h1 id="title" className="text-2xl font-bold">
+              Codecademy
+            </h1>
+            <div className="flex mt-2 ml-5 gap-5">
+              <a
+                className="tooltip"
+                data-tip="Client Repo"
+                href="https://github.com/yusuf-bin-imam/quiz-crackers"
+              >
+                <FiGithub />
+              </a>
+              <a
+                className="tooltip"
+                data-tip="Live Link"
+                href="https://codecademy-quiz.netlify.app/"
+              >
+                <FiExternalLink />
+              </a>
+            </div>
+          </div>
+          <p className="text-start mt-5">
+            Codecademy: Interactive programming quizzes, personalized
+            curriculum, instant feedback, and a supportive community for
+            collaborative learning.
+          </p>
+          <p className="font-bold mt-10  text-start">
+            React I Firebase I Render I Express I NodeJS I MongoDB
           </p>
         </div>
         <div className="h-[300px] mx-auto w-[323px] bg-[#112240]  text-gray-300 font-bold p-5">
           <div className="flex justify-between">
             <h1 id="title" className="text-2xl font-bold">
-              Skillshare
+              Panda Commerce
             </h1>
             <div className="flex mt-2 ml-5 gap-5">
               <a
                 className="tooltip"
                 data-tip="Client Repo"
-                href="https://github.com/yusuf-bin-imam/SkillShare_Client"
-              >
-                <FiGithub />
-              </a>
-              <a
-                className="tooltip"
-                data-tip="Server Repo"
-                href="https://github.com/yusuf-bin-imam/SkillShare_Server"
+                href="https://github.com/yusuf-bin-imam/panda-commerce"
               >
                 <FiGithub />
               </a>
               <a
                 className="tooltip"
                 data-tip="Live Link"
-                href="https://skillshare-authentication.web.app/"
+                href="https://panda-commerce-shop-web.netlify.app/"
               >
                 <FiExternalLink />
               </a>
             </div>
           </div>
           <p className="text-start mt-5">
-            Skillshare is an online learning platform offering programming
-            courses to help individuals develop their skills and knowledge in
-            programming.
+            Panda: Our website offers a wide range of sneakers and backpacks,
+            providing trendy and reliable options for fashion and functionality.
           </p>
-          <p className="font-bold mt-10  text-start">
-            React I Firebase I Render I Express I NodeJS I MongoDB
-          </p>
+          <p className="font-bold mt-10  text-start">HTML I CSS</p>
         </div>
       </div>
     </div>
