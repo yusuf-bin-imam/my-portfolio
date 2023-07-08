@@ -8,11 +8,16 @@ import MoreProjects from "./MoreProjects";
 const Projects = () => {
   return (
     <div className="min-h-screen">
-      <h1 id="title" className="font-bold   text-black text-4xl">
+      <h1 id="title" className="font-bold mt-10 mb-10  text-black text-4xl">
         Some things i've build
       </h1>
+      <hr className="w-1/2 mx-auto" />
       <div className="space-y-28">
-        <div className="mt-20 text-black grid max-w-screen-lg mx-auto  grid-cols-1 lg:grid-cols-2">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          className="mt-20 text-black grid max-w-screen-lg mx-auto  grid-cols-1 lg:grid-cols-2"
+        >
           <img
             className="w-96 lg:w-full mx-auto lg:m-0"
             src={smartzone}
@@ -68,7 +73,11 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="mt-20 text-black grid max-w-screen-lg mx-auto grid-cols-1 lg:grid-cols-2">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="mt-20 text-black grid max-w-screen-lg mx-auto grid-cols-1 lg:grid-cols-2"
+        >
           <img
             className="h-[270px] block lg:hidden mt-[3px] w-96 lg:w-full mx-auto lg:m-0"
             src={edumate}
@@ -130,7 +139,11 @@ const Projects = () => {
             alt=""
           />
         </div>
-        <div className="mt-20 text-black grid max-w-screen-lg mx-auto grid-cols-1 lg:grid-cols-2">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="mt-20 text-black grid max-w-screen-lg mx-auto grid-cols-1 lg:grid-cols-2"
+        >
           <img className="w-96 lg:w-full mx-auto lg:m-0" src={plumboy} alt="" />
           <div>
             <div>

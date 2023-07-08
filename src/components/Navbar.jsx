@@ -19,30 +19,20 @@ const Header = () => {
       borderBottom: isActive ? "2px solid purple" : "none",
     };
   };
-  // // for close dropdown after click
-  // const [isOpen, setOpen] = useState(false);
-
-  // const closeDropDown = () => {
-  //   setOpen(false);
-  // };
 
   const navList = (
     <ul
       id="navlinks"
       className=" mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6"
     >
-      <NavLink
-        to={"/"}
-        style={navStyle}
-        className="mr-5 font-bold text-black hover:text-green-800"
-      >
+      <NavLink to={"/"} style={navStyle} className="mr-5 font-bold text-black ">
         Home
       </NavLink>
 
       <NavLink
         style={navStyle}
         to={"/about"}
-        className="mr-5 text-black font-bold hover:text-green-800"
+        className="mr-5 text-black font-bold "
       >
         About
       </NavLink>
@@ -58,21 +48,27 @@ const Header = () => {
       <NavLink
         style={navStyle}
         to={"blogs"}
-        className="mr-5 font-bold text-black hover:text-green-800 "
+        className="mr-5 font-bold text-black  "
       >
         Blogs
       </NavLink>
       <div className="flex gap-4">
-        <a className="w-9" href="https://github.com/yusuf-bin-imam">
+        <a
+          className="w-9 hover:transform hover:scale-125 transition-all"
+          href="https://github.com/yusuf-bin-imam"
+        >
           <img src={github} alt="github" />
         </a>
         <a
-          className="w-9"
+          className="w-9  hover:transform hover:scale-125 transition-all"
           href="https://web.facebook.com/profile.php?id=100032670966425"
         >
           <img src={fb} alt="Facebook" />
         </a>
-        <a className="w-9" href="https://www.linkedin.com/in/yusuf-bin-imam/">
+        <a
+          className="w-9 hover:transform hover:scale-125 transition-all"
+          href="https://www.linkedin.com/in/yusuf-bin-imam/"
+        >
           <img src={linkedin} alt="Linkedin" />
         </a>
       </div>
@@ -101,11 +97,10 @@ const Header = () => {
 
         <div className="flex justify-between">
           <Link id="title" to={"/contactDetails"}>
-            <button className="rounded-full text-[#6E07F3] hover:text-white font-bold focus:border-none hover:border-none border-[#6E07F3] border hidden lg:inline-block py-3 px-12 hover:bg-[#6E07F3] ">
-              Contact
+            <button className="rounded-full transition-all ease-in-out duration-700 text-[#6E07F3] hover:text-white font-bold  border-[#6E07F3] border hidden lg:inline-block py-3 px-12 hover:bg-[#6E07F3] ">
+              Let's talk
             </button>
           </Link>
-          {/* <Drakmode /> */}
         </div>
       </div>
     </Navbar>

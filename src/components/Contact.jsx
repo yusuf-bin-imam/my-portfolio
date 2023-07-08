@@ -21,7 +21,7 @@ const Contact = () => {
         <p id="title" className=" text-xl text-black mt-3">
           Fell free to contact with me via
           <a
-            className="text-blue-500 hover:text-green-600  font-bold ml-2 text-xl"
+            className="text-[#6E07F3] hover:text-green-600  font-bold ml-2 text-xl"
             href="mailto:yusufbinemamstk@gmail.com"
           >
             Email Me
@@ -32,7 +32,7 @@ const Contact = () => {
           <Link to={"/contactDetails"}>
             <p
               id="title"
-              className="text-blue-500 hover:text-green-700 inline font-bold ml-2 text-xl"
+              className="text-[#6E07F3] hover:text-green-700 inline font-bold ml-2 text-xl"
             >
               Contact Page
             </p>

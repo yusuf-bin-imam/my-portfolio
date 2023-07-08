@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
+import { AiOutlineSend } from "react-icons/ai";
 const Contact = () => {
   const form = useRef();
   const [disable, setDisable] = useState(false);
@@ -110,11 +111,13 @@ const Contact = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
               id="title"
-              className="bg-yellow-500 border border-black px-10 rounded-md text-black font-bold py-3"
+              className="bg-yellow-500  border border-black px-10 rounded-md text-black font-bold py-3"
               disabled={disable ? true : false}
               type="submit"
             >
-              submit
+              <span className="flex gap-1">
+                Send <AiOutlineSend className="mt-1 " />
+              </span>
             </button>
           </form>
         </div>

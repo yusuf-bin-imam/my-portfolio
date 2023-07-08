@@ -1,13 +1,18 @@
 import { FiExternalLink, FiGithub } from "react-icons/fi";
-
+import { BiRightArrow } from "react-icons/bi";
 const MoreProjects = () => {
   return (
     <div className="mt-20 min-h-screen  max-w-screen-lg mx-auto ">
-      <h1 id="title" className="text-3xl mt-10 text-black font-bold">
+      <h1 id="title" className="text-3xl mt-10 mb-10 text-black font-bold">
         Additional Notable Projects
       </h1>
+      <hr className="w-1/2 mx-auto" />
+
       <div className="grid mt-14 gap-5   grid-cols-1 lg:grid-cols-3">
-        <div className="h-[300px] w-[323px] mx-auto bg-[#112240]  text-gray-300 font-bold p-5">
+        <div
+          data-aos="fade-up"
+          className="h-[300px] w-[323px] mx-auto bg-[#112240]  text-gray-300 font-bold p-5"
+        >
           <div className="flex justify-between">
             <h1 id="title" className="text-2xl font-bold">
               Skillshare
@@ -45,7 +50,11 @@ const MoreProjects = () => {
             React I Firebase I Render I Express I NodeJS I MongoDB
           </p>
         </div>
-        <div className="h-[300px] w-[323px] mx-auto bg-[#112240]  text-gray-300 font-bold p-5">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="h-[300px] w-[323px] mx-auto bg-[#112240]  text-gray-300 font-bold p-5"
+        >
           <div className="flex justify-between">
             <h1 id="title" className="text-2xl font-bold">
               Gadget City
@@ -83,7 +92,11 @@ const MoreProjects = () => {
           </p>
         </div>
 
-        <div className="h-[300px] mx-auto w-[323px] bg-[#112240]  text-gray-300 font-bold p-5">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          className="h-[300px] mx-auto w-[323px] bg-[#112240]  text-gray-300 font-bold p-5"
+        >
           <div className="flex justify-between">
             <h1 id="title" className="text-2xl font-bold">
               Codecademy
@@ -114,7 +127,11 @@ const MoreProjects = () => {
             React I Firebase I Render I Express I NodeJS I MongoDB
           </p>
         </div>
-        <div className="h-[300px] mx-auto w-[323px] bg-[#112240]  text-gray-300 font-bold p-5">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="h-[300px] mx-auto w-[323px] bg-[#112240]  text-gray-300 font-bold p-5"
+        >
           <div className="flex justify-between">
             <h1 id="title" className="text-2xl font-bold">
               Panda Commerce
@@ -143,6 +160,12 @@ const MoreProjects = () => {
           <p className="font-bold mt-10  text-start">HTML I CSS</p>
         </div>
       </div>
+      <a
+        href="https://github.com/yusuf-bin-imam"
+        className="font-bold flex gap-3 w-1/5 mx-auto justify-center py-4 m-10 rounded hover:text-white text-black border hover:border-[#6E07F3] transition-all ease-in-out duration-700 border-black text-xl hover:bg-[#6E07F3]"
+      >
+        See more <BiRightArrow className="mt-1" />
+      </a>
     </div>
   );
 };
