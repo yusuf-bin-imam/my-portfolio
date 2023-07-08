@@ -27,6 +27,10 @@ const Skills = () => {
       percent: "65",
     },
     {
+      title: "express js",
+      percent: "75",
+    },
+    {
       title: "nodejs",
       percent: "50",
     },
@@ -51,7 +55,7 @@ const Skills = () => {
 
   return (
     <div>
-      <h1 id="title" className="font-bold mt-10 mb-10  text-black text-4xl">
+      <h1 id="title" className="font-bold mt-10 mb-7  text-black text-4xl">
         Core Skills
       </h1>
       <hr className="w-1/2 mx-auto" />
@@ -62,9 +66,9 @@ const Skills = () => {
               <button
                 key={skill.title}
                 onClick={() => handleSkillClick(skill)}
-                className={`px-4 py-2 text-xl text-gray-100 transition bg-blue-600 rounded-md h-14 w-44  ${
+                className={`px-4 py-2 text-xl text-gray-800 transition bg-white border border-black rounded-md h-14 w-44  ${
                   currentSkill.title === skill.title
-                    ? "font-bold bg-purple-800"
+                    ? "font-bold text-gray-100 bg-purple-800"
                     : ""
                 }`}
               >
