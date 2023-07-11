@@ -1,14 +1,6 @@
-import { useState, useEffect } from "react";
-import {
-  Navbar,
-  MobileNav,
-  Typography,
-  Button,
-  IconButton,
-} from "@material-tailwind/react";
+import { Navbar, Typography } from "@material-tailwind/react";
 import { Link, NavLink } from "react-router-dom";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaFacebook } from "react-icons/fa";
+
 import fb from "../../src/image/facebook.png";
 import linkedin from "../../src/image/linkedin.png";
 import github from "../../src/image/github.png";

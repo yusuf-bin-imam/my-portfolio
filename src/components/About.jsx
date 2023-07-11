@@ -11,7 +11,7 @@ const About = () => {
         >
           <div
             data-aos="fade-right"
-            data-aos-duration="3000"
+            data-aos-duration="1000"
             className="mx-auto"
           >
             <img
@@ -23,15 +23,14 @@ const About = () => {
           <div
             id="title"
             data-aos="fade-up"
-            data-aos-duration="3000"
+            data-aos-duration="1000"
             className="lg:mt-1 mx-auto"
           >
-            <h2 className="text-4xl -ml-1 mb-3 mt-6 text-white lg:text-start font-bold">
-              Hi there..! I’m <span className="text-[#47c3e9]">Yusuf</span>{" "}
-              <br />
+            <h2 className="text-4xl -ml-1 mb-3 mt-4 text-white lg:text-start font-bold">
+              Hi there..! I’m <span className="">Yusuf</span> <br />
               Nice to meet you.
             </h2>
-            <p className="text-gray-200 lg:text-start font-medium text-xl">
+            <p className="text-gray-200 lg:text-start lg:p-0  p-5 font-medium text-xl">
               I'm a junior Mern Stack Developer. I've been working in this
               industry for a year. I've created some projects at this time for
               educational purposes.Here are a full-stack also. My objective is

@@ -15,7 +15,7 @@ const Projects = () => {
       <div className="space-y-28">
         <div
           data-aos="fade-up"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
           className="mt-20 text-black grid max-w-screen-lg mx-auto  grid-cols-1 lg:grid-cols-2"
         >
           <img
@@ -75,7 +75,7 @@ const Projects = () => {
         </div>
         <div
           data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos-duration="1000"
           className="mt-20 text-black grid max-w-screen-lg mx-auto grid-cols-1 lg:grid-cols-2"
         >
           <img
@@ -141,7 +141,7 @@ const Projects = () => {
         </div>
         <div
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           className="mt-20 text-black grid max-w-screen-lg mx-auto grid-cols-1 lg:grid-cols-2"
         >
           <img className="w-96 lg:w-full mx-auto lg:m-0" src={plumboy} alt="" />

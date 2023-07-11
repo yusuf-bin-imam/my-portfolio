@@ -68,7 +68,7 @@ const Skills = () => {
                 onClick={() => handleSkillClick(skill)}
                 className={`px-4 py-2 text-xl text-gray-800 transition bg-white border border-black rounded-md h-14 w-44  ${
                   currentSkill.title === skill.title
-                    ? "font-bold text-gray-100 bg-purple-800"
+                    ? "font-bold text-gray-100 border-none bg-purple-800"
                     : ""
                 }`}
               >

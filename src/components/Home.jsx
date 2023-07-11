@@ -4,10 +4,12 @@ import Typical from "react-typical";
 import About from "./About";
 import Contact from "./Contact";
 import Image from "./Image";
-import hero from "../../src/image/hero3.jpg";
 import { BsDownload } from "react-icons/bs";
 import { FiMessageSquare } from "react-icons/fi";
 import Skills from "./MySkills/Skills";
+import hero1 from "../../src/image/hero1.jpg";
+import ScrollToTop from "react-scroll-to-top";
+import yusuf from "../../src/image/yusuf.png";
 const Home = () => {
   return (
     <div className="min-h-screen">
@@ -16,7 +18,7 @@ const Home = () => {
         data-aos-duration="1500"
         className=" bg-white  text-white"
       >
-        <img src={hero} alt="developerImage" className="w-80 mx-auto" />
+        <img src={yusuf} alt="developerImage" className="w-80 mx-auto" />
         <h1 id="title" className="text-md -mt-7  font-bold text-black">
           Hello I'm
         </h1>
@@ -49,7 +51,7 @@ const Home = () => {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 id="title"
-                className="px-10 transition-all hover:scale-105 ease-in duration-300 rounded py-3 flex bg-[#5be9b9]  border border-[#5be9b9] text-black font-bold"
+                className="px-10 transition-all hover:scale-105 ease-in duration-300 rounded py-3 flex bg-[#5be9b9]  border  text-black font-bold"
                 href="yusufResume.pdf"
                 download
               >
@@ -73,6 +75,7 @@ const Home = () => {
       <About />
       <Skills />
       <Contact />
+      <ScrollToTop smooth color="purple" width="38" />
     </div>
   );
 };

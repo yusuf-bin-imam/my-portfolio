@@ -162,7 +162,7 @@ const MoreProjects = () => {
       </div>
       <a
         href="https://github.com/yusuf-bin-imam"
-        className="font-bold flex gap-3 w-1/5 mx-auto justify-center py-4 m-10 rounded hover:text-white text-black border hover:border-[#6E07F3] transition-all ease-in-out duration-700 border-black text-xl hover:bg-[#6E07F3]"
+        className="font-bold flex gap-3 lg:w-1/5 w-1/2 mx-auto justify-center py-4 m-10 rounded hover:text-white text-black border hover:border-[#6E07F3] transition-all ease-in-out duration-700 border-black text-xl hover:bg-[#6E07F3]"
       >
         See more <BiRightArrow className="mt-1" />
       </a>
