@@ -61,7 +61,6 @@ const MyProject = () => {
           <a
             data-aos="fade-up"
             data-aos-duration="1500"
-            href="#"
             className="group relative rounded-xl block bg-black"
           >
             <img
@@ -184,7 +183,7 @@ const MyProject = () => {
           id="title"
           className="bg-[#5E08F4] mx-auto text-white transition-all hover:scale-110 font-bold py-3 px-10 rounded border border-black "
         >
-          See More{" "}
+          See More
         </button>
       </a>
     </div>

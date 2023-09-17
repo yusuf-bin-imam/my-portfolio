@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../src/image/devTable.svg";
+import img from "../../../src/assets/image/devTable.svg";
 
 const Image = () => {
   return (

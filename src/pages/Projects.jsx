@@ -2,8 +2,8 @@ import React from "react";
 import smartzone from "../../src/image/smartzoneMain.png";
 import edumate from "../../src/image/edumate.png";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-import plumboy from "../../src/image/plumboyyy.png";
-import MoreProjects from "./MoreProjects";
+import plumboy from "../../src/image/plumboy.png";
+import MoreProjects from "../utilities/MoreProjects";
 
 const Projects = () => {
   return (

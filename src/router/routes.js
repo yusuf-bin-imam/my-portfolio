@@ -1,13 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
-import About from "../components/About";
-import Blog from "../components/Blog";
-import Contact from "../components/ContactDetails";
-import ContactDetails from "../components/ContactDetails";
-import Error from "../components/Error";
-import Home from "../components/Home";
-import MyProject from "../components/MyProject";
 import Main from "../Layout/Main";
-import Projects from "../components/Projects";
+import Projects from "../pages/Projects";
+import Home from "../pages/Home";
+import About from "../components/Home/About";
+import Blog from "../pages/Blog";
+import Contact from "../components/Home/Contact";
+import ContactDetails from "../pages/ContactDetails";
+import Error from "../components/Home/Error";
 
 const router = createBrowserRouter([
   {
@@ -38,10 +37,7 @@ const router = createBrowserRouter([
         path: "/projects",
         element: <Projects />,
       },
-      // {
-      //   path: "/project",
-      //   element: <MyProject />,
-      // },
+
       {
         path: "*",
         element: <Error />,

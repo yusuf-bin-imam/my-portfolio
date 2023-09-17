@@ -1,9 +1,8 @@
 import { Navbar, Typography } from "@material-tailwind/react";
 import { Link, NavLink } from "react-router-dom";
-
-import fb from "../../src/image/facebook.png";
-import linkedin from "../../src/image/linkedin.png";
-import github from "../../src/image/github.png";
+import fb from "../../../src/assets/image/facebook.png";
+import linkedin from "../../../src/assets/image/linkedin.png";
+import github from "../../../src/assets/image/github.png";
 
 const Header = () => {
   const navStyle = ({ isActive }) => {
