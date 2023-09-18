@@ -8,6 +8,15 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    // const serviceId = service_nu5c957;
+    // const templateId = template_hhwbi36;
+    // const publicKey = sZkL6tz_dbpczx_ND;
+
+    // const templateParams = {
+    //   from_name: e.target.user_name.value,
+    //   from_email: e.target.user_email.value,
+    //   message: e.target.message.value,
+    // };
 
     emailjs
       .sendForm(
