@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.f049ff6c.css",
-    "main.js": "/my-portfolio/static/js/main.1c3b05de.js",
-    "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
-    "static/media/blog.jpg": "/my-portfolio/static/media/blog.b566e14bbdc0b5e4bcdd.jpg",
-    "static/media/smartzoneMain.png": "/my-portfolio/static/media/smartzoneMain.e1ac9baa86ed8d8fc092.png",
-    "static/media/edumate.png": "/my-portfolio/static/media/edumate.bb10ce7963b7557d86a5.png",
-    "static/media/yusuf.png": "/my-portfolio/static/media/yusuf.0928b9800d095fddd480.png",
-    "static/media/plumboy.png": "/my-portfolio/static/media/plumboy.9a1341ba1d801d94f722.png",
-    "static/media/about.png": "/my-portfolio/static/media/about.c3c26d5d44b693b58765.png",
-    "static/media/devTable.svg": "/my-portfolio/static/media/devTable.ca82e97c349a897082b6268dd7f8d733.svg",
-    "static/media/linkedin.png": "/my-portfolio/static/media/linkedin.17e919bb623c20be8b80.png",
-    "static/media/facebook.png": "/my-portfolio/static/media/facebook.01a470d813915c298403.png",
-    "static/media/github.png": "/my-portfolio/static/media/github.f11021803f68852df283.png",
-    "index.html": "/my-portfolio/index.html",
-    "main.f049ff6c.css.map": "/my-portfolio/static/css/main.f049ff6c.css.map",
-    "main.1c3b05de.js.map": "/my-portfolio/static/js/main.1c3b05de.js.map",
-    "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
+    "main.css": "/static/css/main.f049ff6c.css",
+    "main.js": "/static/js/main.a73dc851.js",
+    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/blog.jpg": "/static/media/blog.b566e14bbdc0b5e4bcdd.jpg",
+    "static/media/smartzoneMain.png": "/static/media/smartzoneMain.e1ac9baa86ed8d8fc092.png",
+    "static/media/edumate.png": "/static/media/edumate.bb10ce7963b7557d86a5.png",
+    "static/media/yusuf.png": "/static/media/yusuf.0928b9800d095fddd480.png",
+    "static/media/plumboy.png": "/static/media/plumboy.9a1341ba1d801d94f722.png",
+    "static/media/about.png": "/static/media/about.c3c26d5d44b693b58765.png",
+    "static/media/devTable.svg": "/static/media/devTable.ca82e97c349a897082b6268dd7f8d733.svg",
+    "static/media/linkedin.png": "/static/media/linkedin.17e919bb623c20be8b80.png",
+    "static/media/facebook.png": "/static/media/facebook.01a470d813915c298403.png",
+    "static/media/github.png": "/static/media/github.f11021803f68852df283.png",
+    "index.html": "/index.html",
+    "main.f049ff6c.css.map": "/static/css/main.f049ff6c.css.map",
+    "main.a73dc851.js.map": "/static/js/main.a73dc851.js.map",
+    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f049ff6c.css",
-    "static/js/main.1c3b05de.js"
+    "static/js/main.a73dc851.js"
   ]
 }
