@@ -1,5 +1,6 @@
 import React from "react";
 import aboutImage from "../../../src/assets/image/about.png";
+import { Award, Briefcase, Calendar, GraduationCap } from "lucide-react";
 
 const About = () => {
   return (
@@ -37,6 +38,47 @@ const About = () => {
               to make a career as a web developer. I am consistently giving this
               place my all in an effort to achieve my aim.
             </p>
+
+            {/* education  */}
+            <div className="grid text-gray-200 grid-cols-1 mt-10 sm:grid-cols-2 gap-4 mb-8">
+              <div className="flex items-start">
+                <div className="mr-3 p-2 bg-blue-100 text-blue-700 rounded-md">
+                  <Award size={20} />
+                </div>
+                <div className="font-bold text-start ">
+                  <h4 className="">Experience</h4>
+                  <p className="text-sm text-orange-300">3+ Years</p>
+                </div>
+              </div>
+              <div className="flex font-bold items-start">
+                <div className="mr-3 p-2 bg-purple-100 text-purple-700 rounded-md">
+                  <Briefcase size={20} />
+                </div>
+                <div className="text-start font-bold ">
+                  <h4 className="">Projects</h4>
+                  <p className="text-start text-sm text-orange-300">
+                    10+ Completed
+                  </p>
+                </div>
+              </div>
+              <div className="flex font-bold items-start">
+                <div className="mr-3 p-2 bg-green-100 text-green-700 rounded-md">
+                  <GraduationCap size={20} />
+                </div>
+                <div className="text-start font-bold">
+                  <h4 className="text-start ">Education</h4>
+                  <p className="text-start text-[14px] text-orange-300">
+                    B.Sc in Computer Science & Engineering
+                  </p>
+                  <p className="text-sm font-bold mt-2">
+                    University of Creative Technology, Chattogram
+                  </p>
+                  <span className="flex gap-1 items-center text-gray-400 mt-1">
+                    <Calendar className="w-4 h-4" /> 2022 - current
+                  </span>
+                </div>
+              </div>
+            </div>
             {/* <p className="text-black mt-3 lg:text-start font-medium text-xl">
               Here are a few technologies I’ve been working with recently
             </p>
